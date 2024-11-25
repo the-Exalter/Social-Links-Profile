@@ -43,24 +43,32 @@ body {
     padding-bottom: 1rem;
     padding-top: .4rem;
 }
-.btns {
-    padding-top: 1rem;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
 }
-button {
+li {
     width: 100%;
-    font-weight: 700;
-    font-size: .7rem;
-    color: white;
     background-color: var(--Grey700);
-    border: none;
     border-radius: 5px;
-    padding: .7rem .9rem;
-    margin-bottom: .7rem;
+    padding: .4rem .2rem;
 }
-.insta {
-    margin: 0;
+li:not(:last-child) {
+    margin-bottom: .8rem;
 }
-button:hover {
+a {
+    font-size: .7rem;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+}
+a:hover, li:hover {
     background-color: var(--Green);
     color: var(--Grey800);
+    a {
+        color: var(--Grey800);
+    }
 }
