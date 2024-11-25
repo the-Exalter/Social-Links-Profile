@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
     --Green: hsl(75, 94%, 57%);
     --White: hsl(0, 0%, 100%);
@@ -8,72 +10,57 @@
 
 
 body {
+    margin: 0;
     background-color: var(--Grey900);
 }
 .card {
-    width: 17vw;
-    height: 65vh;
+    width: 14rem;
     background-color: var(--Grey800);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15vh;
-    border: none;
+    margin: 10rem auto;
     border-radius: 15px;
-    padding: 35px;
-    padding-bottom: 25px;
+    padding: 1.9rem;
     text-align: center;
     font-family: "Inter", sans-serif;
     color: var(--White);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .avatar {
-    border: none;
     border-radius: 50%;
-    height: 80px;
-    width: 80px;
-    margin-bottom: 5px;
+    width: 25%;
 }
 .name {
     font-weight: 700;
-    margin-bottom: 7px;
+    margin-bottom: 0;
 }
 .brief {
-    font-size: 12px;
+    font-size: .67rem;
     color: hsl(0, 0%, 70%);
 }
 .location {
-    margin-top: 0;
+    margin: 0;
     color: var(--Green);
-    font-size: 12px;
-    font-weight: 500;
-    margin-bottom: 15px;
+    font-size: .67rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    padding-top: .4rem;
 }
 .btns {
-    margin-top: 20px;
-    width: inherit;
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    padding-top: 1rem;
 }
 button {
-    width: inherit;
+    width: 100%;
     font-weight: 700;
-    font-size: 12px;
+    font-size: .7rem;
     color: white;
     background-color: var(--Grey700);
     border: none;
     border-radius: 5px;
-    padding: 15px;
+    padding: .7rem .9rem;
+    margin-bottom: .7rem;
+}
+.insta {
+    margin: 0;
 }
 button:hover {
     background-color: var(--Green);
     color: var(--Grey800);
-}
-@media only screen and (max-width: 768px) {
-    .card {
-        width: 70vw;
-    }
 }
